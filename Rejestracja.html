@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .registration-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .button {
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .button:hover {
+            background-color: #4cae4c;
+        }
+        .error-message {
+            color: #d9534f;
+            margin-bottom: 10px;
+        }
+        .success-message {
+            color: #5cb85c;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-container">
+    <h2>Rejestracja</h2>
+    
+    <div id="error-message" class="error-message"></div>
+    
+    <form id="registration-form" onsubmit="return validateForm()">
+        <label for="first-name">Imię:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Wpisz swoje imię" required>
+        
+        <label for="last-name">Nazwisko:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Wpisz swoje nazwisko" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Wpisz swój email" required>
+        
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" placeholder="Wpisz swoje hasło" required>
+        
+        <label for="confirm-password">Potwierdź hasło:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Powtórz swoje hasło" required>
+        
+        <a<button type="submit" class="button"><a href="Logowanie.html">Zarejestruj sie</a></button>
+    </form>
+</div>
+
+</body>
+</html>

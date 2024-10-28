@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Wynajmu Mieszkania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        .flex-container {
+            display: flex;
+            width: 100%; 
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            justify-content: flex-start; 
+        }
+        .container {
+            padding: 1px;
+            flex: 1;
+        }
+        h1 {
+            color: #000000;
+            text-align: left; 
+        }
+        .offer-details {
+            margin-bottom: 20px;
+            text-align: left; 
+        }
+        .offer-details h2 {
+            color: #5cb85c;
+        }
+        .contact-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            text-align: left;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #d9534f;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #5bc0de;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: left; 
+        }
+        .button:hover {
+            background-color: #31b0d5;
+        }
+        .image-container {
+            flex: 0 0 300px; 
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .additional-info {
+            padding: 20px;
+            text-align: left; 
+        }
+        .info-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: left; 
+        }
+        
+        nav {
+            position: absolute;
+            top: 20px; 
+            right: 20px; 
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #5bc0de;
+            font-size: 1em;
+        }
+        nav a:hover {
+            color: #31b0d5;
+        }
+        .new-div {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 500px; 
+    margin-right: 00px;  
+}
+
+    </style>
+</head>
+<body>
+
+   
+    <nav>
+        <h1>Zalogowano</h1>
+    </nav>
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>Piękne mieszkanie do wynajęcia pod Sosna</h1>
+            <div class="offer-details">
+                <h2>Stylowe Mieszkanie pod Sosna obok pięknej szkoły podstawowej nr 2</h2>
+                <p><strong>Lokalizacja:</strong> ul. Wolności 20, 07-200 Wyszków</p>
+                <p><strong>Powierzchnia:</strong> 154 m²</p>
+                <p><strong>Liczba pokoi do wynajęcia:</strong> 2</p>
+                <p><strong>Opis:</strong> Oferujemy do wynajęcia piękne 2 pokoje w przepięknym domu. Pokoje znajdują się w górnej części domu, na dole znajdują się 3 pokoje, w których mieszka nasza obsługa, która może zaoferować pomoc klientom w każdej chwili.</p>
+                <p class="price">Cena: 2500 PLN/miesiąc</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Dane kontaktowe</h3>
+                <p><strong>Imię i Nazwisko:</strong> Adam Sosnowski</p>
+                <p><strong>Email:</strong> <a href="mailto:Adam.Sosnowski@gmail.com">Adam.Sosnowski@gmail.com</a></p>
+                <p><strong>Telefon 1:</strong> +48 515 713 521</p>
+                <p><strong>Telefon 2:</strong> +48 452 905 798</p>
+                <a href="mailto:Adam.Sosnowski@gmail.com" class="button">Skontaktuj się z wlascicielem</a>
+            </div>
+        </div>
+        <div class="new-div">
+            <marquee scrollamount="50">
+                <img src="2.png" width="200" height="200">
+            </marquee>
+        </div>
+
+        <div class="image-container">
+            <img src="1.png" alt="Opis zdjęcia">
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <h3>Dodatkowe informacje</h3>
+        <p>Wszystkie opłaty zawarte w cenie.</p>
+    </div>
+
+    <div class="info-section">
+        <h3>Wyposażenie</h3>
+        <p>Mieszkanie jest w pełni wyposażone: lodówka, pralka, kuchnia gazowa, telewizor.</p>
+    </div>
+
+    <div class="info-section">
+        <h3>Okolica</h3>
+        <p>W okolicy piękne boisko do gry, sklep oraz szkoła podstawowa.</p>
+    </div>
+
+    <div class="info-section">
+        <h3>Właściciel</h3>
+        <p>Naszym właścicielem jest Adam Sosnowski.</p>
+        <img src="3.jpg" width="200" height="200" alt="Zdjęcie Sedziaka">
+    </div>
+
+    <hr>
+    <p>&#169; Sedziak &#169;</p>
+
+</body>
+</html>

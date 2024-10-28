@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Gierka</title>
+</head>
+<body>
+    <center>
+    <h1 id="nag">Gierka </h1>
+    <button class="btn btn-primary m-1 p-4" id="b1">&nbsp;</button>
+    <button class="btn btn-primary m-1 p-4" id="b2">&nbsp;</button>
+    <button class="btn btn-primary m-1 p-4" id="b3">&nbsp;</button><br/>
+    <button class="btn btn-primary m-1 p-4" id="b4">&nbsp;</button>
+    <button class="btn btn-primary m-1 p-4" id="b5">&nbsp;</button>
+    <button class="btn btn-primary m-1 p-4" id="b6">&nbsp;</button><br/>
+    <button class="btn btn-primary m-1 p-4" id="b7">&nbsp;</button>
+    <button class="btn btn-primary m-1 p-4" id="b8">&nbsp;</button>
+    <button class="btn btn-primary m-1 p-4" id="b9">&nbsp;</button>
+    <script>
+
+        let gracze = ["o","x"];
+
+    let krok= 1;
+    
+     let plansza = document.querySelectorAll("button");
+         plansza.forEach((el)=>{
+            el.addEventListener("click",(e)=>{
+                if (krok<=9){
+                el.innerText=krok;
+                krok = krok+1;
+                el.innerText=gracze[krok%2]
+            }
+         })
+        });
+     //let b1= document.getElementById("b1");
+     //b1.addEventListener("click",(e)=>{b1.innerText=krok})
+   
+   </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</center>
+</body>
+</html>
